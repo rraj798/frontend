@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #555;
+}
+
+h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+#contact-form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+.btn,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+input[type="reset"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 1px solid #e67e22;
+  margin-right: 15px;
+}
+
+table,
+td {
+  border: 1px solid #555;
+}
+
+td,
+th {
+  min-width: 150px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}

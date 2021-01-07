@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <h2>Registration Form</h2>
+      </div>
+      <div class="row">
+        <form class="contact-form" id="contact-form">
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="name">Name</label>
+        </div>
+        <div class="col span-2-of-3">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="dob">Date Of Birth</label>
+        </div>
+        <div class="col span-2-of-3">
+          <input
+            type="date"
+            name="dob"
+            id="dob"
+            max="07-01-2021"
+            placeholder="Your Date Of Birth"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="pob">Place Of Birth</label>
+        </div>
+        <div class="col span-2-of-3">
+          <input
+            type="text"
+            name="pob"
+            id="pob"
+            placeholder="Your Place Of Birth"
+            required
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <label for="gender">Gender</label>
+        </div>
+        <div class="col span-2-of-3">
+          <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+            <label>Address</label>
+        </div>
+        <div class="col span-2-of-3">
+            <textarea name="address" id="address" placeholder="Your address" required></textarea>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="occupation">Occupation</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input
+              type="text"
+              name="occupation"
+              id="occupation"
+              placeholder="Your Occupation"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="marriatalstatus"> Marital Status</label>
+          </div>
+          <div class="col span-2-of-3">
+          <input type="radio" id="ms-um" name="mstatus" value="unmarried" />
+          <label for="ms-um">UnMarried</label>
+          <input type="radio" id="ms-m" name="mstatus" value="married" />
+          <label for="ms-m">Married</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+              <label>Senior Citizen</label>
+          </div>
+          <div class="col span-2-of-3">
+              <input type="checkbox" name="seniorcitizen" id="seniorcitizen" unchecked> Yes, I am a senior citizen.
+          </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3">
+          <input type="reset" value="Clear It!">
+        </div>
+        <div class="col span-2-of-3">
+          <!-- <input type="submit" value="Send it!"> -->
+          <input class="btn" type="submit" onclick="loadTable()" value="Submit">
+      </div>
+    </div>
+    </form>
+    </section>
+    <section>
+      <div class="row">
+        <h2>Details</h2>
+      </div>
+      <table id="myTable">
+        <tr>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Place Of Birth</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Occupation</th>
+          <th>Marital Status</th>
+          <th>Senior Citizen</th>
+        </tr>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
