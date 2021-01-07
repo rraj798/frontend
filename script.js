@@ -56,6 +56,7 @@ function loadTable() {
     cellUserMStatus.innerHTML = userMarritalStatus;
     cellUserSeniorCitizen.innerHTML = userSeniorCitizen;
 
+    document.querySelector(".tblClass").classList.remove("hidden");
     document.getElementById("contact-form").reset();
   }
 }
